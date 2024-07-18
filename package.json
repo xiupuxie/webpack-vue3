@@ -1,0 +1,33 @@
+{
+  "name": "vue-project",
+  "version": "1.0.0",
+  "description": "搭建项目demo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server -c webpack.dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xiupu.xie",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-typescript": "^7.24.7",
+    "css-loader": "^7.1.2",
+    "sass-loader": "^14.2.1",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.9",
+    "@babel/plugin-transform-runtime": "^7.24.7",
+    "@babel/preset-env": "^7.24.8",
+    "@babel/runtime": "^7.24.8",
+    "babel-loader": "^9.1.3",
+    "copy-webpack-plugin": "^12.0.2",
+    "html-webpack-plugin": "^5.6.0",
+    "vue-loader": "^17.4.2",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
