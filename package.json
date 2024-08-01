@@ -4,14 +4,17 @@
   "description": "搭建项目demo",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server -c webpack.dev.js",
+    "dev": "webpack-dev-server -c webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "xiupu.xie",
   "license": "ISC",
   "dependencies": {
     "@babel/preset-typescript": "^7.24.7",
+    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.0",
+    "mini-css-extract-plugin": "^2.9.0",
     "sass-loader": "^14.2.1",
     "style-loader": "^4.0.0",
     "ts-loader": "^9.5.1",
