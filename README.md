@@ -1,3 +1,3 @@
 # webpack-vue3
 Webpack+Vue3+Ts 项目的搭建demo 目的在于了解前端项目的工程化是怎么做管理的
-webpack在生产中的优化方式有很多
+以及webpack常见的dev和prod环境的优化

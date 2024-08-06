@@ -2,6 +2,8 @@ process.env._MODE = 'production';
 
 const path = require('path');
 const { merge } = require('webpack-merge');
+//webpack分析
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 // const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
@@ -12,8 +14,6 @@ const config = merge(baseConfig, {
         filename: 'js/[name].[chunkhash:8].js',
         chunkFilename: 'js/[name].[chunkhash:8].js'
     },
-    mode: 'production',
-    devtool: 'source-map',
     optimization: {
         splitChunks: {
             cacheGroups: {
@@ -54,6 +54,7 @@ const config = merge(baseConfig, {
             filename: 'css/[name].[contenthash:8].css',
             chunkFilename: 'css/[name].[contenthash:8].css',
         }),
+        new BundleAnalyzerPlugin()
     ],
 });
 ``
